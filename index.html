@@ -1,19 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Usama Khalid</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Usama Khalid | Portfolio</title>
 <style>
-body{font-family:Arial;text-align:center;background:#111;color:white;padding:50px}
-h1{color:#00ff88;font-size:40px}
-p{font-size:20px}
-a{background:#00ff88;color:black;padding:12px 25px;text-decoration:none;border-radius:10px;font-weight:bold}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#fff;color:#111;overflow-x:hidden}
+.top{position:fixed;top:12px;left:50%;transform:translateX(-50%);background:#000;color:#fff;padding:12px 20px;border-radius:30px;font-weight:900;letter-spacing:1px;font-size:13px;z-index:99;width:92%;max-width:500px;text-align:center}
+.hero{min-height:100vh;background:linear-gradient(#d9d9d9,#f5f5f5);position:relative;display:flex;flex-direction:column;justify-content:center;padding:90px 20px 20px;overflow:hidden}
+.hero small{font-size:12px;line-height:1.8;letter-spacing:1px}
+.hero h1{font-size:78px;font-weight:1000;line-height:0.85;letter-spacing:-2px;color:#fff}
+.by{position:absolute;right:15px;top:38%;font-size:11px;letter-spacing:1px}
+.hero-img{width:100%;max-width:420px;margin:10px auto -10px;display:block}
+.script{font-family:cursive;font-size:68px;font-weight:bold;transform:rotate(-4deg);margin-top:-70px;position:relative;z-index:5;text-align:center}
+.profile{font-size:13px;line-height:1.6;margin:15px 0}
+.profile b{font-size:18px}
+.quote{padding:50px 22px;text-align:center}
+.quote h2{font-size:28px;line-height:1.2;text-transform:uppercase}
+.quote p{margin-top:15px;color:#888;letter-spacing:2px;font-size:12px}
+.btns{padding:0 20px 30px;display:flex;flex-direction:column;gap:12px}
+.btn{padding:18px;border-radius:30px;color:#fff;text-align:center;font-weight:800;letter-spacing:1px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;padding-left:25px;padding-right:25px;box-shadow:0 10px 20px rgba(0,0,0,.15)}
+.c1{background:linear-gradient(90deg,#ff9a3d,#ff5e8a)} .c2{background:linear-gradient(90deg,#ff5e8a,#7b5cff)} .c3{background:linear-gradient(90deg,#00d2ff,#3a7bd5)} .c4{background:linear-gradient(90deg,#ff9a3d,#ffcc00)} .c5{background:linear-gradient(90deg,#00c853,#00e5ff)} .c6{background:linear-gradient(90deg,#7b5cff,#00d2ff)} .c7{background:linear-gradient(90deg,#ff4081,#ff9800)} .c8{background:linear-gradient(90deg,#00b09b,#96c93d)}
+.section{padding:40px 20px}
+.section h2{font-size:42px;font-weight:1000;text-transform:uppercase}
+.section p{color:#555;line-height:1.7;margin-top:12px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
+.tags span{border:1px solid #ddd;padding:8px 14px;border-radius:30px;font-size:12px}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:15px}
+.gallery img{width:100%;height:180px;object-fit:cover;border-radius:15px}
+.gallery img.big{grid-column:span 2;height:280px}
+.skills{background:#000;color:#fff;padding:40px 20px}
+.skills h2{text-align:center;font-size:36px}
+.skill{border:1px solid #222;padding:18px;border-radius:15px;margin-top:12px}
+.skill small{color:#888} .skill b{font-size:22px;display:block;margin-top:5px}
+.proj{border:1px solid #111;padding:16px;border-radius:30px;text-align:center;margin-top:10px}
+.contact{text-align:center;padding:50px 20px}
+.contact h2{font-size:36px}
+.contact-btns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:20px}
+.contact-btns a{border:1px solid #111;padding:10px 20px;border-radius:30px;text-decoration:none;color:#111;font-weight:700}
+.contact-btns a.black{background:#000;color:#fff}
 </style>
 </head>
 <body>
-<h1>Assalam-o-Alaikum, I'm Usama Khalid</h1>
-<p>Welcome to my personal website.</p>
-<p>I am learning web development.</p>
-<br><br>
-<a href="#">Contact Me</a>
+<div class="top">USAMA KHALID TOOLS</div>
+<div class="hero">
+<small>• CREATIVE VISUAL ARTIST<br>• CONTENT CREATOR<br>• TECH ENTHUSIAST<br>• AI DEVELOPER</small>
+<h1>USAMA</h1>
+<div class="by">BY MR SHADOW</div>
+<img class="hero-img" src="usama.jpg">
+<div class="script">Usama</div>
+<div class="profile"><b>PROFILE:</b><br>• 20 YEARS OLD<br>• BASED IN RIYADH<br>• AVAILABLE FOR WORK</div>
+</div>
+<div class="quote">
+<h2>"Success Is Not Just What You Accomplish In Your Life, It's About What You Inspire Others To Do."</h2>
+<p>USAMA KHALID SITE'S</p>
+</div>
+<div class="btns">
+<a class="btn c1" href="#about">EXPLORE MY WORK <span>⚡</span></a>
+<a class="btn c2" href="#projects">MY PROJECTS <span>⚡</span></a>
+<a class="btn c3" href="#contact">CONNECT WITH ME <span>⚡</span></a>
+<a class="btn c4" href="#gallery">MY GALLERY <span>⚡</span></a>
+<a class="btn c5" href="#skills">MY SKILLS <span>⚡</span></a>
+<a class="btn c6" href="#about">ABOUT ME <span>⚡</span></a>
+<a class="btn c7" href="#contact">CONTACT ME <span>⚡</span></a>
+<a class="btn c8" href="#">COMING SOON <span>⚡</span></a>
+</div>
+<div class="section" id="about">
+<img src="usama.jpg" style="width:100%;border-radius:20px;height:320px;object-fit:cover">
+<h2 style="margin-top:20px">ABOUT ME</h2>
+<p>I am <b>Usama Khalid</b>, passionate and motivated learner with a strong interest in modern technology and creativity. I enjoy exploring new tools, building digital solutions, and creating engaging visual content.</p>
+<p>My objective is to grow as a tech professional and creative developer by learning new technologies and creating impactful digital content that inspires others.</p>
+<h3 style="margin-top:20px">INTERESTS</h3>
+<div class="tags"><span>TECHNOLOGY INNOVATION</span><span>CONTENT CREATION</span><span>AI TOOLS & DEVELOPMENT</span><span>CREATIVE DESIGN</span><span>DIGITAL GROWTH</span></div>
+</div>
+<div class="section" id="gallery">
+<h2>GALLERY</h2>
+<p>Visual Showcase by Usama Khalid</p>
+<div class="gallery">
+<img class="big" src="usama.jpg">
+<img src="usama.jpg"><img src="usama.jpg">
+<img class="big" src="usama.jpg">
+</div>
+<p style="text-align:center;font-weight:800;color:#111">USAMA KHALID<br><small>DESIGNED BY USAMA KHALID</small></p>
+</div>
+<div class="skills" id="skills">
+<h2>MY SKILLS</h2>
+<div class="skill"><small>SKILL</small><b>AI ENTHUSIAST</b></div>
+<div class="skill"><small>SKILL</small><b>AI DEVELOPER</b></div>
+<div class="skill"><small>SKILL</small><b>WEB DEVELOPMENT</b></div>
+<div class="skill"><small>SKILL</small><b>SOFTWARE DEVELOPMENT</b></div>
+<div class="skill"><small>SKILL</small><b>CONTENT CREATION</b></div>
+<div class="skill"><small>SKILL</small><b>VISUAL DESIGN</b></div>
+<div class="skill"><small>SKILL</small><b>EDITING</b></div>
+<div class="skill"><small>SKILL</small><b>CREATIVE THINKING</b></div>
+</div>
+<div class="section" id="projects">
+<h2 style="text-align:center">Projects</h2>
+<div class="proj">Project 1</div>
+<div class="proj">Project 2</div>
+<div class="proj">Project 3</div>
+<div class="proj">Project 4</div>
+<div class="proj">Project 5</div>
+<div class="proj">Project 6</div>
+</div>
+<div class="contact" id="contact">
+<h2>CONTACT WITH ME</h2>
+<p>Riyadh, Saudi Arabia | Available for Work</p>
+<div class="contact-btns">
+<a class="black" href="mailto:uk57456400@gmail.com">EMAIL</a>
+<a href="https://wa.me/966500000000">CALL</a>
+<a href="#">INSTAGRAM</a>
+<a href="#">TIKTOK</a>
+<a href="#">YOUTUBE</a>
+<a href="#">SNAPCHAT</a>
+<a class="black" href="#">FACEBOOK</a>
+</div>
+<p style="margin-top:30px;color:#999;font-size:12px">2026 Usama Khalid Built With Passion</p>
+</div>
 </body>
 </html>
